@@ -63,33 +63,40 @@ allWeaponDiv.forEach((button) => {
 			computerThing();
 		}
 
-		//Who win?
+		//Who win? 
 			if(cpuPick == button.id)
 			{
+				announceWinner.style.color = '#f1c40e';
 				announceWinner.textContent = 'TIED';
 			}
 			else  if(button.id === "rock" && cpuPick === "paper") 
 			{
+				announceWinner.style.color = '#fa455a';
 				announceWinner.textContent = 'COMPUTER WIN';
 			}
 			else  if(cpuPick === "rock" && button.id === "paper") 
 			{
+				announceWinner.style.color = '#2eb872';
 				announceWinner.textContent = 'PLAYER WIN';
 			}
 			else  if(button.id === "paper" && cpuPick === "scissor")
 			{
+				announceWinner.style.color = '#fa455a';
 				announceWinner.textContent = 'COMPUTER WIN';
 			}
 			else  if(cpuPick === "paper" && button.id === "scissor")
 			{
+				announceWinner.style.color = '#2eb872';
 				announceWinner.textContent = 'PLAYER WIN';
 			}
 			else  if(button.id === "scissor" && cpuPick === "rock")
 			{
+				announceWinner.style.color = '#fa455a';
 				announceWinner.textContent = 'COMPUTER WIN';
 			}
 			else  if(cpuPick === "scissor" && button.id === "rock") 
 			{
+				announceWinner.style.color = '#2eb872';
 				announceWinner.textContent = 'PLAYER WIN';
 			}
 	})
