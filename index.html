@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&family=Roboto:wght@500&family=Smooch+Sans:wght@100&display=swap" rel="stylesheet"> 
+	<title>Project: Rock Paper Scissor</title>
+	<script src="index.js" defer></script>
+</head>
+<body>
+	<!--start of header-->
+	<header>
+		<h1 class="title">ROCK, PAPER, SCISSOR </h1>
+		<h1 class="subtitle">Can you bet me? -StupidComputer</h1>
+	</header>
+	<div class="hr"><hr></div> <!--my hr escape-->
+	<!-- start of main -->
+	<div id="main">
+		<!--picking-->
+			<div class="picking">
+				<div class="left-picking col">	
+					<div class="img-card picking-logo player-pick">
+							<img id="computer-pick" class="pick-logo" src="./images/question-mark.png" alt="question-mark">
+					</div>
+					<h5 class="pickerName">COMPUTER</h5>
+				</div>
+				<div class="vs">
+				<embed src="./images/fighting.png" class="logo-vs">
+					<div class="score">
+						<span class="computerScore">0</span>
+						<span class="playerScore">0</span>
+					</div>
+				</div>
+				<div class="right-picking col">
+					<div class="img-card picking-logo">
+						<img id="player-pick" class="pick-logo" src="./images/question-mark.png" alt="question-mark">
+					</div>
+					<h5 class="pickerName">PLAYER</h5>
+				</div>
+		  </div>
+			<div class="result">
+				<div class="top-result col">
+					<h5 id="round">ROUND 1</h5>
+				</div>
+				<div class="bot-result col">
+					<h5 id="winner"><img class="pick-logo" src="./images/question-mark.png" alt="question-mark"></h5>
+				</div>
+			</div>
+	</div>
+	<!--start of selection-->	
+	<div class="hr"><hr></div> <!--my hr escape-->
+	<div class="selection-content">
+		<h2>CHOOSE YOUR WEAPON:</h2>
+		<div class="three-weapon">
+			<div class="wrapper-selection-col">
+				<button id="rock" class="selection-card ylw-hvr">
+					<img src="./images/icons8-rock-96.png" alt="rock" class="rock">
+				</button>
+				<p>ROCK</p>
+			</div>
+			<div class="wrapper-selection-col">
+				<button id="paper" class="selection-card ylw-hvr">
+					<img src="./images/icons8-hand-64.png" alt="hand-paper" class="hand">
+				</button>
+				<p>PAPER</p>
+			</div>
+			<div class="wrapper-selection-col">	
+				<button id="scissor" class="selection-card ylw-hvr">
+					<img src="./images/icons8-scissor-64.png" alt="scissor" class="scissor">
+				</button>
+				<p>SCISSOR </p>
+			</div>
+		</div>
+	</div>
+	<!--start of footer-->
+	<div class="hr"><hr></div> <!--my hr escape-->
+	<div class="footer">
+		<div class="left-footer">Made by Nelvin Monares | Follow me:</div>
+		<div class="right-footer">
+			 <a href="https://github.com/Imjustnelvin"><img class="logo" src="./images/github-sign.png" alt="github-logo"></a>
+				<a href="https://www.facebook.com/imjustmonares/"><img class="logo" src="./images/facebook.png" alt="facebook-logo"></a>
+				<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="logo" src="./images/youtube.png" alt="youtube-logo"></a>	
+		</div>
+	</div>
+</body>
+</html>
